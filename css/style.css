@@ -296,7 +296,7 @@ body{
     padding-left: 0;
     padding-right:40px;
 }
-@media  screen and (max-width:600px) {
+@media  screen and (max-width:768px) {
     .navbar ul li{
         display: none;
     }
