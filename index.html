@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snap</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+           
+            <ul>
+                <a href="#" class="logo"><img src="images/logo.svg"></a>
+                <li><a href="#" class="active">features</a>
+                <img src="images/icon-arrow-down.svg" class="arrow">
+             <div class="sub-menu">
+                <ul>
+                    <li><a href="#"><img src="images/icon-todo.svg">Todo list</a></li>
+                    <li><a href="#"><img src="images/icon-calendar.svg">calender</a></li>
+                    <li><a href="#"><img src="images/icon-reminders.svg">reminders</a></li>
+                    <li><a href="#"><img src="images/icon-planning.svg">planning</a></li>
+                </ul>
+             </div>
+            </li>
+                <li><a href="#">company</a>
+                <img src="images/icon-arrow-down.svg" class="arrow">
+                <div class="sub-menu2">
+                    <ul>
+                        <li><a href="#">history</a></li>
+                        <li><a href="#">our team</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                 </div>
+                </li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+            <ul>
+            <li><button class="btn">login</button></li>
+            <li><button class="button">register</button></li>
+        </ul>
+        <span class="menubar" onclick="openNav()"><img src="images/icon-menu.svg"></span>
+    </nav>
+    <div class="sidenav" id="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()"><img src="images/icon-close-menu.svg"></a>
+        <ul>
+        <li><a href="#" class="active">features <img src="images/icon-arrow-down.svg" class="arrow"></a>
+               
+             <div class="sub-menu">
+                <ul>
+                    <li><a href="#"><img src="images/icon-todo.svg">Todo list</a></li>
+                    <li><a href="#"><img src="images/icon-calendar.svg">calender</a></li>
+                    <li><a href="#"><img src="images/icon-reminders.svg">reminders</a></li>
+                    <li><a href="#"><img src="images/icon-planning.svg">planning</a></li>
+                </ul>
+            </div>
+        </li>
+         <li><a href="#">company <img src="images/icon-arrow-down.svg" class="arrow"></a>
+               
+                <div class="sub-menu2">
+                    <ul>
+                        <li><a href="#">history</a></li>
+                        <li><a href="#">our team</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                 </div>
+                </li>
+
+               <li><a href="#">careers</a></li>
+                 <li><a href="#">about</a></li>
+                </ul>
+                 <a href="#"><button class="btn">login</button></a>
+                    <a href="#"><button class="button">register</button></a>
+    </div>
+    <section class="header">
+    
+        <div class="content">
+            <h1>Make<br> remote work</h1>
+            <p>Get your team in sync no matter your location.<br> streamline process, create team rituals and<br> watch productivity soars.</p>
+            <button> Learn more</button>
+        </div>
+        <img src="images/image-hero-desktop.png" height="450" width="auto">
+    </section>
+    <div class="end1">
+        <img src="images/client-databiz.svg">
+        <img src="images/client-audiophile.svg">
+        <img src="images/client-meet.svg">
+        <img src="images/client-maker.svg">
+    </div>
+    <section class="header2">
+        <img src="images/image-hero-mobile.png" height="450" width="auto">
+        <div class="content2">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync no matter your <br>location.streamline process, create<br> team rituals and watch productivity soars.</p>
+            <button> Learn more</button>
+        </div>
+        
+    </section>
+
+    
+    <div class="end">
+        <img src="images/client-databiz.svg">
+        <img src="images/client-audiophile.svg">
+        <img src="images/client-meet.svg">
+        <img src="images/client-maker.svg">
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById ("sidenav").style.width="50%"
+        }
+        function closeNav() {
+            document.getElementById ("sidenav").style.width="0%"
+        }    
+    </script>
+</body>
+</html>
