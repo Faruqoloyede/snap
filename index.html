@@ -41,10 +41,10 @@
             <li><button class="btn">login</button></li>
             <li><button class="button">register</button></li>
         </ul>
-        <span class="menubar" onclick="openNav()"><img src="images/icon-menu.svg"></span>
+        <span class="openMenu"><img src="images/icon-menu.svg"></span>
     </nav>
-    <div class="sidenav" id="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()"><img src="images/icon-close-menu.svg"></a>
+    <div class="sideMenu">
+        <a href="#" class="closeMenu" id=""><img src="images/icon-close-menu.svg"></a>
         <ul>
         <li><a href="#" class="active">features <img src="images/icon-arrow-down.svg" class="arrow"></a>
                
@@ -94,7 +94,7 @@
         <div class="content2">
             <h1>Make remote work</h1>
             <p>Get your team in sync no matter your <br>location.streamline process, create<br> team rituals and watch productivity soars.</p>
-            <button> Learn more</button>
+            <button style="text-align:center;"> Learn more</button>
         </div>
         
     </section>
@@ -106,14 +106,6 @@
         <img src="images/client-meet.svg">
         <img src="images/client-maker.svg">
     </div>
-
-    <script>
-        function openNav() {
-            document.getElementById ("sidenav").style.width="50%";
-        }
-        function closeNav() {
-            document.getElementById ("sidenav").style.width="0%";
-        }    
-    </script>
+        <script src="js/app.js"></script>
 </body>
 </html>

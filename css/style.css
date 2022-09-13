@@ -197,17 +197,7 @@ body{
     margin-left:5px;
     display: none;
 }
-.end img{
-    padding-left: 0;
-    padding-right:5px;
-}
-
-.menubar{
-    padding-right: 0px;
-    display: none;
-    cursor: pointer;
-}
-.sidenav{
+.sideMenu{
     height: 100%;
     position: fixed;
     top: 0;
@@ -219,76 +209,13 @@ body{
     width: 200px;
     box-shadow:  0 3px 5px black;
     display: none;
+    
 }
-.sidenav a{
-    padding: 8px 8px 8px 40px;
-    display: block;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    text-transform: capitalize;
+.end img{
+    padding-left: 0;
+    padding-right:5px;
 }
-.sidenav a .arrow{
-    height: 10px;
-    text-align: center;
-}
-.sidenav a .btn{
-    background: none;
-    color: black;
-    padding-left:30px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    margin-bottom: 0px;
-    cursor: pointer;
-}
-.sidenav a .button{
-    background: none;
-    color: black;
-    border: none;
-    outline: none;
-    border: 1px solid black;
-    font-size: 18px;
-    padding:5px 30px;
-    text-transform: capitalize;
-    font-family: sans-serif;
-    border-radius: 10px;
-    margin-top: 0px;
-    cursor: pointer;
-}
-.closebtn{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    width: 50px;
-    margin-left: 50px;
-    cursor: pointer;
-}
-.sidenav ul li:hover .sub-menu ul li a{
-    font-size: 16px;
-    margin-bottom:5px;
-}
-.sidenav ul li:hover .sub-menu ul li a img{
-    width:15px;
-    padding-right: 5px;
-}
-.sidenav ul li:hover .sub-menu{
-    display: block;
-    margin-left: 30px;
-}
-.sidenav ul li:hover .sub-menu2{
-    display: block;
-    margin-left: 30px;
-}
-.sidenav ul li:hover .sub-menu2 ul li a{
-    font-size: 16px;
-    margin-bottom:5px;
-}
+
 .end1{
     margin-left:10%;
 }
@@ -296,17 +223,20 @@ body{
     padding-left: 0;
     padding-right:40px;
 }
+
+.openMenu{
+    padding-right: 0px;
+    display: none;
+    cursor: pointer;
+}
 @media  screen and (max-width:768px) {
     .navbar ul li{
         display: none;
     }
-    .menubar{
+    .openMenu{
         display: flex;
     }
-    .sidenav{
-        display: block;
-    }
-
+    
     .header{
         display: flex;
         flex-direction: column;
@@ -326,5 +256,89 @@ body{
     }
     .end{
         display: block;
+    }
+   
+    .sideMenu{
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0%;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.3 ease-in;
+        padding-top: 60px;
+        width: 200px;
+        box-shadow:  0 3px 5px black;
+        display: none;
+        
+    }
+    .sideMenu a{
+        padding: 8px 8px 8px 40px;
+        display: block;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    .sideMenu a .arrow{
+        height: 10px;
+        text-align: center;
+    }
+    .sideMenu a .btn{
+        background: none;
+        color: black;
+        padding-left:30px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+    .sideMenu a .button{
+        background: none;
+        color: black;
+        border: none;
+        outline: none;
+        border: 1px solid black;
+        font-size: 18px;
+        padding:5px 30px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        border-radius: 10px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+    .closeMenu{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        width: 50px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .sideMenu ul li:hover .sub-menu ul li a{
+        font-size: 16px;
+        margin-bottom:5px;
+    }
+    .sideMenu ul li:hover .sub-menu ul li a img{
+        width:15px;
+        padding-right: 5px;
+    }
+    .sideMenu ul li:hover .sub-menu{
+        display: block;
+        margin-left: 30px;
+    }
+    .sideMenu ul li:hover .sub-menu2{
+        display: block;
+        margin-left: 30px;
+    }
+    .sideMenu ul li:hover .sub-menu2 ul li a{
+        font-size: 16px;
+        margin-bottom:5px;
     }
 }
